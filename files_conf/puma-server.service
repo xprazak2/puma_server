@@ -13,7 +13,6 @@ Environment="PUMA_DB_PASSWORD=vagrant"
 Environment="PUMA_DEBUG=1"
 Environment="RAILS_LOG_TO_STDOUT=1"
 Environment="RAILS_SERVE_STATIC_FILES=1"
-#Environment="PATH=/home/{username}/.rvm/bin:/usr/local/bin:/usr/bin"
 TimeoutSec=30
 RestartSec=15
 Restart=always

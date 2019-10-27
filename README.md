@@ -1,24 +1,4 @@
-# README
+## puma_server
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Rails + React dummy application with 'production' configs. This project aims to demonstrate the configuration needed for the given stack to be deployed to production environment.
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
