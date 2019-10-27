@@ -1,0 +1,24 @@
+[Unit]
+Description=Puma server
+After=network.target
+
+[Service]
+Type=simple
+User=vagrant
+
+WorkingDirectory=/home/vagrant/puma_server
+ExecStart=/home/vagrant/.rvm/bin/rvm all do bundle exec puma -C /home/vagrant/puma_server/config/puma.rb
+Environment="RAILS_ENV=production"
+Environment="PUMA_DB_PASSWORD=vagrant"
+Environment="PUMA_DEBUG=1"
+Environment="RAILS_LOG_TO_STDOUT=1"
+Environment="RAILS_SERVE_STATIC_FILES=1"
+#Environment="PATH=/home/{username}/.rvm/bin:/usr/local/bin:/usr/bin"
+TimeoutSec=30
+RestartSec=15
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
+
+

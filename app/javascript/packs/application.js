@@ -27,6 +27,6 @@ const Hello = props => (
 document.addEventListener('DOMContentLoaded', () => {
   ReactDOM.render(
     <Hello name="React" />,
-    document.getElementById('react-root')
+    document.body.appendChild(document.createElement('div'))
   )
 });

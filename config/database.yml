@@ -8,8 +8,8 @@ default: &default
 development:
   <<: *default
   database: puma_server_development
-  username: puma
-  password: puma
+  username: vagrant
+  password: vagrant
   host: 127.0.0.1
   port: 5432
 
@@ -46,8 +46,8 @@ development:
 test:
   <<: *default
   database: puma_server_test
-  username: puma
-  password: puma
+  username: vagrant
+  password: vagrant
   host: 127.0.0.1
   port: 5432
 # As with config/secrets.yml, you never want to store sensitive information,
@@ -72,5 +72,5 @@ test:
 production:
   <<: *default
   database: puma_server_production
-  username: puma
-  password: <%= ENV['BFIT_DATABASE_PASSWORD'] %>
+  username: vagrant
+  password: <%= ENV['PUMA_DB_PASSWORD'] %>
